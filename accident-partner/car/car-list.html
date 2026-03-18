@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-section">
+        <div class="logo">
+          <img src="../../assets/image/etc/etc-logo.svg" alt="올림포스 로고">
+        </div>
+        <div class="welcome">
+          <h2>반갑습니다!<br>올림포스관리자 님</h2>
+          <p>오늘도 안전한 하루 보내세요 :)</p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">홈</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list03.svg" alt="" /></span>
+              <span class="text">차량 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list04.svg" alt="" /></span>
+              <span class="text">제휴콜 현황</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list05.svg" alt="" /></span>
+              <span class="text">보험 계약서</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">보험계약서 등록</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">보험계약서 목록</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list12.svg" alt="" /></span>
+              <span class="text">캐시/포인트 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list07.svg" alt="" /></span>
+              <span class="text">직원 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">직원 리스트</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">탈퇴직원 리스트</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list10.svg" alt="" /></span>
+              <span class="text">공지/문의/알림</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">공지사항</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">문의하기</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">알림내역</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list13.svg" alt="" /></span>
+              <span class="text">소개처 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list02.svg" alt=""></span>
+              <span class="text">사업자 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list11.svg" alt="" /></span>
+              <span class="text">설정</span>
+            </a>
+          </li>
+          <li class="last">
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon on"><img src="../../assets/image/ico/ico-lnb-list14.svg" alt="" /></span>
+              <span class="text">알림</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <button class="hamburger"><img src="../../assets/image/ico/ico-hamburger.svg" alt="" /></button>
+        <div class="spacer"></div>
+        <button class="logout">로그아웃</button>
+      </header>
+
+      <!-- 컨텐츠 영역 -->
+      <div class="page-header">
+        <div class="page-header-container">
+          <h1>차량 관리</h1>
+          <button type="button">차량 등록</button>
+          <button type="button">차량 등록</button>
+        </div>
+        <div class="search-section">
+          <div class="search-filters">
+            <div class="filter-group">
+              <select class="select">
+                <option>모델명</option>
+              </select>
+            </div>
+            <div class="search-input-group">
+              <input type="text" placeholder="검색어를 입력하세요" class="search-input">
+              <button class="search-btn">검색</button>
+              <button class="reset-btn">초기화</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs-container">
+        <div class="label">차종</div>
+        <div class="tabs">
+          <button class="tab-btn active">전체</button>
+          <button class="tab-btn">승용</button>
+          <button class="tab-btn">SUV/RV</button>
+          <button class="tab-btn">전기차</button>
+          <button class="tab-btn">기타</button>
+        </div>
+      </div>
+
+      <div class="tabs-container">
+        <div class="label">차량상태</div>
+        <div class="tabs">
+          <button class="tab-btn active">전체</button>
+          <button class="tab-btn">대기</button>
+          <button class="tab-btn">배차</button>
+          <button class="tab-btn">예약</button>
+          <button class="tab-btn">수리</button>
+          <button class="tab-btn">직원 사용</button>
+          <button class="tab-btn">장기 렌트</button>
+          <button class="tab-btn">타사 플랫폼 이용중</button>
+        </div>
+      </div>
+
+
+
+      <!-- Table -->
+      <div class="table-container">
+        <table class="data-table">
+          <colgroup>
+            <col width="60" />
+            <col width="80" />
+            <col width="" />
+            <col width="80" />
+            <col width="100" />
+            <col width="140" />
+            <col width="170" />
+            <col width="100" />
+            <col width="100" />
+            <col width="100" />
+            <col width="173" />
+            <col width="110" />
+            <col width="130" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="ac">상태</th>
+              <th class="ac">업체번호</th>
+              <th>업체/지점명</th>
+              <th class="ac">등급</th>
+              <th class="ac">차량번호</th>
+              <th class="ac">모델</th>
+              <th class="ac">차량명</th>
+              <th class="ac">차동자등록증</th>
+              <th class="ac">주행거리(km)</th>
+              <th class="ac">최초등록일</th>
+              <th class="ac">최초등록일</th>
+              <th class="ac">보험 연령</th>
+              <th class="ac">관리</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ac">대기</td>
+              <td class="ac">257</td>
+              <td>(주)중부렌트카 동부영업소</td>
+              <td class="ac">준대형</td>
+              <td class="ac">00호0000</td>
+              <td class="ac">E클래스</td>
+              <td class="ac">올뉴카니발9인승</td>
+              <td class="ac">X</td>
+              <td class="ac">190,000</td>
+              <td class="ac">2025.08.12</td>
+              <td class="ac">
+                <button class="rent-btn">일렌트</button>
+                <button class="rent-btn">월렌트</button>
+              </td>
+              <td class="ac">만 21세 이상</td>
+              <td class="ac">
+                <button class="action-btn">수정</button>
+                <button class="delete-btn">삭제</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="ac">대기</td>
+              <td class="ac">257</td>
+              <td>(주)중부렌트카 동부영업소</td>
+              <td class="ac">준대형</td>
+              <td class="ac">00호0000</td>
+              <td class="ac">E클래스</td>
+              <td class="ac">올뉴카니발9인승</td>
+              <td class="ac">X</td>
+              <td class="ac">190,000</td>
+              <td class="ac">2025.08.12</td>
+              <td class="ac">
+                <button class="rent-btn">일렌트</button>
+                <button class="rent-btn">월렌트</button>
+              </td>
+              <td class="ac">만 21세 이상</td>
+              <td class="ac">
+                <button class="action-btn">수정</button>
+                <button class="delete-btn">삭제</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="nodata">자료가 없습니다</div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="page-btn" disabled><img src="../../assets/image/ico/ico-page-prev.svg" alt="" /></button>
+        <button class="page-btn">1</button>
+        <button class="page-btn active">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <button class="page-btn">5</button>
+        <button class="page-btn">6</button>
+        <button class="page-btn"><img src="../../assets/image/ico/ico-page-next.svg" alt="" /></button>
+      </div>
+
+      <!-- 컨텐츠 영역 -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="company-info">
+            <div class="info-row">
+              <span><strong>회사명</strong> 주식회사올림포스네트웍스</span>
+              <span><strong>대표</strong> 원종훈</span>
+              <span><strong>주소</strong> 경기도 성남시 수정구 고등로3, 현대지식산업센터 514호</span>
+            </div>
+            <div class="info-row">
+              <span><strong>사업자 등록번호</strong> 656-87-02554</span>
+              <span><strong>통신판매업 신고번호</strong> 제2022-서울송파-1106호</span>
+            </div>
+            <div class="info-row last">
+              <span><strong>개인정보책임관리자</strong> 박정근</span>
+              <a href="javascript:void(0)">이용약관</a>
+              <a href="javascript:void(0)">개인정보보호방침</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+  </div>
+
+  <!--팝업 -->
+  <div id="modal-car-select" class="modal-popup active">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>청구서류 선택</h2>
+        <button type="button" class="close-btn" onclick="common.popClose('#modal-car-select')"><img src="../../assets/image/ico/ico-popup-close.svg" alt="" /></button>
+      </div>
+      <div class="modal-content">
+        <div class="modal-search-container">
+          <input type="text" class="modal-search-input" placeholder="차량번호 또는 차량명을 검색해주세요" />
+          <button type="button" class="modal-search-btn">
+            <img src="../../assets/image/ico/ico-search.svg" alt="" />
+          </button>
+        </div>
+        <div class="modal-list-container">
+          <ul>
+            <li>
+              <div class="info-container">
+                <div class="info-status">배차</div>
+                <div class="info-title">피해자차량1 / 175허4758</div>
+                <div class="info-desc">주행거리 1,1110km | 유류량 11%</div>
+              </div>
+              <button type="button" class="select-btn">선택하기</button>
+            </li>
+            <li>
+              <div class="info-container">
+                <div class="info-status">대기</div>
+                <div class="info-title">피해자차량1 / 175허4758</div>
+                <div class="info-desc">주행거리 1,1110km | 유류량 11%</div>
+              </div>
+              <button type="button" class="select-btn">선택하기</button>
+            </li>
+            <li>
+              <div class="info-container">
+                <div class="info-status">대기</div>
+                <div class="info-title">피해자차량1 / 175허4758</div>
+                <div class="info-desc">주행거리 1,1110km | 유류량 11%</div>
+              </div>
+              <button type="button" class="select-btn">선택하기</button>
+            </li>
+            <li>
+              <div class="info-container">
+                <div class="info-status">대기</div>
+                <div class="info-title">피해자차량1 / 175허4758</div>
+                <div class="info-desc">주행거리 1,1110km | 유류량 11%</div>
+              </div>
+              <button type="button" class="select-btn">선택하기</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

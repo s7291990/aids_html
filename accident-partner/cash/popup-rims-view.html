@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+  </div>
+
+  <!--팝업 -->
+  <div id="modal-rims-view" class="modal-popup active">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>RIMS 조회</h2>
+        <button type="button" class="close-btn" onclick="common.popClose('#modal-rims-view')"><img src="../../assets/image/ico/ico-popup-close.svg" alt="" /></button>
+      </div>
+      <div class="modal-content">
+        <div class="modal-form-container">
+          <div class="modal-form-item">
+            <div class="label">RIMS등록 <br />사업자선택</div>
+            <input type="text" class="text-input" readonly />
+          </div>
+          <div class="modal-form-item">
+            <div class="label">RIMS등록 ID</div>
+            <input type="text" class="text-input" readonly />
+          </div>
+          <div class="modal-form-item">
+            <div class="label">고객이름</div>
+            <input type="text" class="text-input" />
+          </div>
+          <div class="modal-form-item">
+            <div class="label">면허번호</div>
+            <input type="text" class="text-input" />
+          </div>
+          <div class="modal-form-item">
+            <div class="label">면허구분</div>
+            <input type="text" class="text-input" />
+          </div>
+          <div class="modal-form-item">
+            <div class="label">렌트차량번호</div>
+            <input type="text" class="text-input" />
+          </div>
+          <div class="modal-form-item">
+            <div class="label">대여시작일</div>
+            <input type="text" class="text-input" />
+          </div>
+          <div class="modal-form-item">
+            <div class="label">예상대여마감일</div>
+            <input type="text" class="text-input" />
+          </div>
+        </div>
+        <div class="button-group">
+          <button class="btn btn-primary">조회</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

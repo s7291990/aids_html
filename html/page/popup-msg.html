@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+  </div>
+
+  <!--팝업 -->
+  <div id="modal-excel-register" class="modal-popup active">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>차량 엑셀 등록</h2>
+        <button type="button" class="close-btn" onclick="common.popClose('#modal-excel-register')"><img src="../../assets/image/ico/ico-popup-close.svg" alt="" /></button>
+      </div>
+      <div class="modal-content">
+        <div class="excel-register-container">
+          <a href="javascript:void(0)">차량등록 엑셀 서식 파일 다운로드.xlsx</a>
+          <div class="desc">차량 등록은 한번에 100대 까지 가능합니다.
+            <br />엑셀 파일에서 지원되지 않는 데이터를 임의로 입력 시
+            <br />문제가 발생할 수 있습니다.
+          </div>
+          <div class="excel-register-file">
+            <input type="file" class="file-input" />
+            <input type="text" class="file-name" placeholder="파일을 선택해주세요." readonly />
+            <button type="button" class="file-btn">파일 선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

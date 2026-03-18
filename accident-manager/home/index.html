@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="../../assets/style/billboard.css" type="text/css" />
+  <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+
+  <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/common.js"></script>
+  <script type="text/javascript" src="../../assets/script/lib/d3.v6.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/lib/billboard-3.8.js"></script>
+  <script type="text/javascript" src="../../assets/script/lib/jquery.easypiechart.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-section">
+        <div class="logo">
+          <img src="../../assets/image/etc/etc-logo.svg" alt="올림포스 로고">
+        </div>
+        <div class="welcome">
+          <h2>반갑습니다!<br>올림포스관리자 님</h2>
+          <p>오늘도 안전한 하루 보내세요 :)</p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">홈</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item active">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list02.svg" alt="" /></span>
+              <span class="text">업체 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item active"><span class="text">업체 캐시포인트 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">탈퇴업체 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">구획별 업체리스트</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list03.svg" alt="" /></span>
+              <span class="text">차량 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list04.svg" alt="" /></span>
+              <span class="text">제휴 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list05.svg" alt="" /></span>
+              <span class="text">보험 계약서</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">보험계약서 등록</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">보험계약서 목록</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list06.svg" alt="" /></span>
+              <span class="text">일반 계약서</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">일반 계약서 등록</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">일반 계약서 목록</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list07.svg" alt="" /></span>
+              <span class="text">직원 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">직원 리스트</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">탈퇴 직원리스트</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list08.svg" alt="" /></span>
+              <span class="text">소개처 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list09.svg" alt="" /></span>
+              <span class="text">배너 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list10.svg" alt="" /></span>
+              <span class="text">공지/문의</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">공지사항</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">문의관리</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list11.svg" alt="" /></span>
+              <span class="text">설정</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">관리자 정보</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">보험사 코드 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">자동차 데이터 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">청구기준 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">구획 수수료 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">약관</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+      </nav>
+
+      <div class="settings-section">
+        <div class="setting-item">
+          <span>자동배차 설정</span>
+          <div class="toggle">
+            <input type="checkbox" class="toggle-input" />
+          </div>
+        </div>
+        <div class="setting-item">
+          <span>앱 푸시</span>
+          <div class="toggle">
+            <input type="checkbox" class="toggle-input" />
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <button class="hamburger"><img src="../../assets/image/ico/ico-hamburger.svg" alt="" /></button>
+        <div class="spacer"></div>
+        <button class="logout">로그아웃</button>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <img src="../../assets/image/etc/etc-home-banner.png" alt="" />
+      </section>
+
+      <!-- Statistics Cards -->
+      <section class="stats-section">
+        <div class="stat-card monthly-stats">
+          <h3>월 통계 (7월)</h3>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="label">이달 총 매출액</span>
+              <span class="value">3,305,000원</span>
+            </div>
+            <div class="stat-item">
+              <span class="label">이달 배차 건수</span>
+              <span class="value">241건</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card vehicle-stats">
+          <h3>차량 현황</h3>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="label">등록된 차량 수</span>
+              <span class="value">12,345대</span>
+            </div>
+            <div class="stat-item">
+              <span class="label">대기중 차량 수</span>
+              <span class="value">234대</span>
+            </div>
+            <div class="stat-percentage">
+              <div class="percentage-circle pie-list01">
+                <span>98%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card dispatch-stats">
+          <h3>배차 현황</h3>
+          <div class="stat-content">
+            <div class="stat-item">
+              <span class="label">배차 중</span>
+              <span class="value">1,234건</span>
+            </div>
+            <div class="stat-item">
+              <span class="label">청구 대기</span>
+              <span class="value">23건</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+      <section class="charts-section">
+        <div class="charts-header">
+          <h3>조회기간</h3>
+          <div class="period-selector">
+            <div class="period-tabs">
+              <button class="period-tab active">3일</button>
+              <button class="period-tab">7일</button>
+              <button class="period-tab">30일</button>
+              <button class="period-tab">60일</button>
+            </div>
+            <div class="date-range">
+              <input type="date" value="2025-07-17">
+              <span>~</span>
+              <input type="date" value="2025-07-23">
+              <button class="search-btn">검색</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">
+            <div class="chart-header">
+              <h4>방문자 수</h4>
+              <div class="chart-legend">
+                <span class="legend-dot"></span>
+                <span>방문자 수</span>
+              </div>
+            </div>
+            <div id="barChart01" class="chart-content"></div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <h4>회원</h4>
+              <div class="chart-legend">
+                <span class="legend-dot"></span>
+                <span>회원가입</span>
+              </div>
+            </div>
+            <div id="barChart02" class="chart-content"></div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <h4>차량 현황</h4>
+              <div class="chart-legend">
+                <span class="legend-dot"></span>
+                <span>차량 현황</span>
+              </div>
+            </div>
+            <div id="barChart03" class="chart-content"></div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <h4>매출</h4>
+              <div class="chart-legend">
+                <span class="legend-dot"></span>
+                <span>매출</span>
+              </div>
+            </div>
+            <div id="barChart04" class="chart-content"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="company-info">
+            <div class="info-row">
+              <span><strong>회사명</strong> 주식회사올림포스네트웍스</span>
+              <span><strong>대표</strong> 원종훈</span>
+              <span><strong>주소</strong> 경기도 성남시 수정구 고등로3, 현대지식산업센터 514호</span>
+            </div>
+            <div class="info-row">
+              <span><strong>사업자 등록번호</strong> 656-87-02554</span>
+              <span><strong>통신판매업 신고번호</strong> 제2022-서울송파-1106호</span>
+            </div>
+            <div class="info-row last">
+              <span><strong>개인정보책임관리자</strong> 박정근</span>
+              <a href="javascript:void(0)">이용약관</a>
+              <a href="javascript:void(0)">개인정보보호방침</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    function pieLoad(t, o) {
+      if (o == 0) {
+        $(t).addClass("off");
+      } else {
+        $(t).easyPieChart({
+          //easing: 'easeOutBounce',
+          onStep: function (from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+          },
+          onStop: function (from, to) {
+            console.log('end');
+            if (o == 100) {
+              $(t).addClass("end");
+            }
+          }
+        });
+        var chart = window.chart = $(t).data('easyPieChart');
+        chart.update(o);
+      }
+    }
+
+    pieLoad(".pie-list01", 80);
+
+    var chart1 = bb.generate({
+      data: {
+        x: "x",
+        columns: [
+          ["x", '2025-07-17', '2025-07-18', '2025-07-19'],
+          ["data1", 90, 100, 140],
+          //["data2", 130, 40, 200, 310, 230, 325, 163, 230, 222, 240, 160, 310]
+        ],
+        types: {
+          data1: "bar", // for ESM specify as: bar()
+        }
+      },
+      axis: {
+        x: {
+          inverted: true,
+          type: "timeseries",
+          tick: {
+            format: "%Y-%m-%d"
+          }
+        },
+      },
+      grid: {
+        y: {
+          show: true
+        }
+      },
+      legend: {
+        show: false,
+      },
+      bindto: "#barChart01"
+    });
+    var chart2 = bb.generate({
+      data: {
+        x: "x",
+        columns: [
+          ["x", '2025-07-17', '2025-07-18', '2025-07-19'],
+          ["data1", 90, 100, 140],
+          //["data2", 130, 40, 200, 310, 230, 325, 163, 230, 222, 240, 160, 310]
+        ],
+        types: {
+          data1: "bar", // for ESM specify as: bar()
+        }
+      },
+      axis: {
+        x: {
+          inverted: true,
+          type: "timeseries",
+          tick: {
+            format: "%Y-%m-%d"
+          }
+        },
+      },
+      grid: {
+        y: {
+          show: true
+        }
+      },
+      legend: {
+        show: false,
+      },
+      bindto: "#barChart02"
+    });
+    var chart3 = bb.generate({
+      data: {
+        x: "x",
+        columns: [
+          ["x", '2025-07-17', '2025-07-18', '2025-07-19'],
+          ["data1", 90, 100, 140],
+          //["data2", 130, 40, 200, 310, 230, 325, 163, 230, 222, 240, 160, 310]
+        ],
+        types: {
+          data1: "bar", // for ESM specify as: bar()
+        }
+      },
+      axis: {
+        x: {
+          inverted: true,
+          type: "timeseries",
+          tick: {
+            format: "%Y-%m-%d"
+          }
+        },
+      },
+      grid: {
+        y: {
+          show: true
+        }
+      },
+      legend: {
+        show: false,
+      },
+      bindto: "#barChart03"
+    });
+    var chart4 = bb.generate({
+      data: {
+        x: "x",
+        columns: [
+          ["x", '2025-07-17', '2025-07-18', '2025-07-19'],
+          ["data1", 90, 100, 140],
+          //["data2", 130, 40, 200, 310, 230, 325, 163, 230, 222, 240, 160, 310]
+        ],
+        types: {
+          data1: "bar", // for ESM specify as: bar()
+        }
+      },
+      axis: {
+        x: {
+          inverted: true,
+          type: "timeseries",
+          tick: {
+            format: "%Y-%m-%d"
+          }
+        },
+      },
+      grid: {
+        y: {
+          show: true
+        }
+      },
+      legend: {
+        show: false,
+      },
+      bindto: "#barChart04"
+    });
+  </script>
+</body>
+
+</html>

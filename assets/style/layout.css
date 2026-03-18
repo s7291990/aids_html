@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background-color: #00437A;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.sidebar.closed {
+  width: 0;
+  padding: 0; /* 필요시 */
+}
+
+.sidebar .logo-section {
+  padding: 32px 24px;
+}
+
+.sidebar .logo {
+  margin-bottom: 20px;
+}
+
+.sidebar .welcome h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.sidebar .welcome p {
+  font-size: 16px;
+  color: #C4C6D1;
+  line-height: 24px;
+}
+
+.sidebar .nav-menu {
+  padding: 0 20px;
+}
+
+.sidebar li.last{
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  margin-top: 14px;
+  padding-top: 14px;
+}
+
+.sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #39434B;
+  position: relative;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.sidebar .nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.sidebar .nav-item.active {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.sidebar .indicator {
+  width: 4px;
+  height: 20px;
+  background-color: #39434B;
+  margin-right: 20px;
+  border-radius: 2px;
+  visibility: hidden;
+}
+
+.sidebar .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.sidebar .icon.on:before{
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #E8503A;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sidebar .text {
+  font-size: 14px;
+  font-weight: 400;
+  flex-grow: 1;
+  color: #fff;
+}
+
+.sidebar .plus {
+  font-size: 14px;
+  color: #636779;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.sidebar .settings-section {
+  width: calc(100% - 40px);
+  margin: 14px auto 0 auto;
+  padding: 14px 20px 20px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.sidebar .toggle {
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar .toggle.off {
+  background-color: #C4C6D1;
+}
+
+.sidebar .toggle.on {
+  background-color: #007BE0;
+}
+
+.sidebar .toggle-handle {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s;
+  border: 1px solid #C4C6D1;
+}
+
+.sidebar .toggle.on .toggle-handle {
+  transform: translateX(20px);
+  border-color: #007BE0;
+}
+
+.sidebar .sub-menu .nav-item {
+  padding-left: 58px;
+  position: relative;
+}
+
+.sidebar .sub-menu .nav-item.active:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 32px;
+  top: 16px;
+}
+
+.sidebar .nav-item.active .plus {
+  display: flex;
+  width: 14px;
+  height: 15px;
+  background: url(../../assets/image/ico/ico-mius.svg) no-repeat center center;
+}
+
+.sidebar .nav-item.active .plus img {
+  visibility: hidden;
+}
+
+.sidebar .nav-item.active+ul.sub-menu {
+  display: block;
+}
+
+.sidebar ul.sub-menu {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+
+.sidebar ul.sub-menu li {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.sidebar ul.sub-menu:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.20);
+  position: absolute;
+  left: 35px;
+  top: 0;
+}
+
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.top-bar {
+  height: 64px;
+  background-color: #00437A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.top-bar .hamburger {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.top-bar .logout {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}

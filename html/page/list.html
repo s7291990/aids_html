@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/script/lib/datatables.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/lib/jquery-ui-timepicker-addon.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-section">
+        <div class="logo">
+          <img src="../../assets/image/etc/etc-logo.svg" alt="올림포스 로고">
+        </div>
+        <div class="welcome">
+          <h2>반갑습니다!<br>님</h2>
+          <p>오늘도 안전한 하루 보내세요 :)</p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">멀티모달 데이터 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">영상정보</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">전문정보</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">음성정보</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">상황인지 추론 결과 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">상황인지 결과</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">위협대상 정보 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">아군 자산제원 정보</span></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="javascript:void(0)" class="nav-item"><span class="text">자산정보</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="nav-item"><span class="text">부대정보</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="nav-item"><span class="text">아/적 화기효과</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">적군 자산제원 정보</span></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="javascript:void(0)" class="nav-item"><span class="text">자산정보</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="nav-item"><span class="text">적/아 화기효과</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">전장상황 정보</span></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="javascript:void(0)" class="nav-item"><span class="text">아군 객체정보</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="nav-item"><span class="text">적군 객체정보</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="nav-item"><span class="text">지형정보</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">위협평가/타격 스케줄링 결과 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">위협평가 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">타격 스케줄링 결과</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">전장자료 통계</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">현황요약</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">멀티모달 통계</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">표적 정보 통계</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">보고서</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <button class="hamburger"><img src="../../assets/image/ico/ico-hamburger.svg" alt="" /></button>
+        <div class="spacer"></div>
+        <button class="logout">로그아웃</button>
+      </header>
+
+      <!-- 컨텐츠 영역 -->
+      <div class="page-header">
+        <div class="search-section">
+          <div class="search-filters">
+            <div class="filter-group">
+              <select class="select">
+                <option>모델명</option>
+              </select>
+            </div>
+            <div class="search-input-group">
+              <input type="text" placeholder="검색어를 입력하세요" class="search-input datetimepicker">
+              <button class="search-btn">검색</button>
+              <button class="reset-btn">초기화</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-header-container">
+          <button type="button">차량 등록</button>
+          <button type="button">차량 등록</button>
+        </div>
+      </div>
+
+      <div class="page-list-container">
+
+        <!-- Table -->
+        <div class="table-container">
+          <table id="example" class="display">
+            <thead>
+              <tr>
+                <th>시나리오 ID</th>
+                <th>이미지ID</th>
+                <th>이미지</th>
+                <th>파일 경로/URL</th>
+                <th>이미지 종류</th>
+                <th>시스템타임</th>
+              </tr>
+            </thead>
+          </table>
+          <script>
+            var data = [
+              [
+                "Tiger Nixon",
+                "System Architect",
+                "Edinburgh",
+                "5421",
+                "2011/04/25",
+                "$3,120"
+              ],
+              [
+                "Garrett Winters",
+                "Director",
+                "Edinburgh",
+                "8422",
+                "2011/07/25",
+                "$5,300"
+              ]
+            ]
+            new DataTable('#example', {
+              //ajax: '../ajax/data/arrays.txt'
+              data: data,
+              searching: false,
+            });
+          </script>
+        </div>
+
+        <!-- 상세 정보-->
+        <div class="list-info-container">
+          <h3>상세 정보</h3>
+          <ul>
+            <li>
+              <div class="key">해상도 정보</div>
+              <div class="value">-</div>
+            </li>
+            <li>
+              <div class="key">위도</div>
+              <div class="value">37.532532</div>
+            </li>
+            <li>
+              <div class="key">경도</div>
+              <div class="value">127.352352</div>
+            </li>
+            <li>
+              <div class="key">고도</div>
+              <div class="value">-</div>
+            </li>
+            <li>
+              <div class="key">기타 메타데이터</div>
+              <div class="value">-</div>
+            </li>
+            <li>
+              <div class="key">시스템타임</div>
+              <div class="value">-</div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="page-btn" disabled><img src="../../assets/image/ico/ico-page-prev.svg" alt="" /></button>
+        <button class="page-btn">1</button>
+        <button class="page-btn active">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <button class="page-btn">5</button>
+        <button class="page-btn">6</button>
+        <button class="page-btn"><img src="../../assets/image/ico/ico-page-next.svg" alt="" /></button>
+      </div>
+
+      <!-- 컨텐츠 영역 -->
+
+
+    </main>
+  </div>
+</body>
+
+</html>

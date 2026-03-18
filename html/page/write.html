@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-section">
+        <div class="logo">
+          <img src="../../assets/image/etc/etc-logo.svg" alt="올림포스 로고">
+        </div>
+        <div class="welcome">
+          <h2>반갑습니다!<br>올림포스관리자 님</h2>
+          <p>오늘도 안전한 하루 보내세요 :)</p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list01.svg" alt="" /></span>
+              <span class="text">홈</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item active">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list02.svg" alt="" /></span>
+              <span class="text">업체 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item active"><span class="text">업체 캐시포인트 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">탈퇴업체 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">구획별 업체리스트</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list03.svg" alt="" /></span>
+              <span class="text">차량 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list04.svg" alt="" /></span>
+              <span class="text">제휴 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list05.svg" alt="" /></span>
+              <span class="text">보험 계약서</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">보험계약서 등록</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">보험계약서 목록</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list06.svg" alt="" /></span>
+              <span class="text">일반 계약서</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">일반 계약서 등록</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">일반 계약서 목록</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list07.svg" alt="" /></span>
+              <span class="text">직원 관리</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">직원 리스트</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">탈퇴 직원리스트</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list08.svg" alt="" /></span>
+              <span class="text">소개처 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list09.svg" alt="" /></span>
+              <span class="text">배너 관리</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list10.svg" alt="" /></span>
+              <span class="text">공지/문의</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">공지사항</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">문의관리</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-item">
+              <span class="indicator"></span>
+              <span class="icon"><img src="../../assets/image/ico/ico-lnb-list11.svg" alt="" /></span>
+              <span class="text">설정</span>
+              <span class="plus"><img src="../../assets/image/ico/ico-plus.svg" alt="" /></span>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">관리자 정보</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">보험사 코드 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">자동차 데이터 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">청구기준 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">구획 수수료 관리</span></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-item"><span class="text">약관</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+      </nav>
+
+      <div class="settings-section">
+        <div class="setting-item">
+          <span>자동배차 설정</span>
+          <div class="toggle">
+            <input type="checkbox" class="toggle-input" />
+          </div>
+        </div>
+        <div class="setting-item">
+          <span>앱 푸시</span>
+          <div class="toggle">
+            <input type="checkbox" class="toggle-input" />
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <button class="hamburger"><img src="../../assets/image/ico/ico-hamburger.svg" alt="" /></button>
+        <div class="spacer"></div>
+        <button class="logout">로그아웃</button>
+      </header>
+
+      <!-- 컨텐츠 영역 -->
+
+      <div class="page-header">
+        <div class="page-header-container">
+          <h1>보험계약서 등록</h1>
+        </div>
+      </div>
+
+      <div class="form-container">
+
+        <div class="section-header-container">
+          <h2>1. 운전자 정보</h2>
+          <button type="button">제2운전자 추가</button>
+          <button type="button">법인정보 추가</button>
+        </div>
+        <div class="form-rela">
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">고객 이름</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" placeholder="고객 이름 입력" class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">고객 연락처</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" placeholder="‘-’없이 숫자만 입력" class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">주민등록번호</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" placeholder="주민등록번호 앞자리 입력" class="text-input">
+                  <span class="e01">-</span>
+                  <input type="text" placeholder="주민등록번호 뒷자리 입력" class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">주소</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <input type="text" class="text-input" readonly="">
+                    <button type="button" class="btn-outlined">주소 검색</button>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="상세주소 입력" class="text-input">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">배차요청<br />계약 여부</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <input type="text" class="text-input" readonly="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">배차요청 연번</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <input type="text" class="text-input" readonly="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">면허번호</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <select class="select">
+                    <option>서울(11)</option>
+                  </select>
+                  <input type="text" placeholder="면허 번호 입력" class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">면허구분</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <select class="select full">
+                      <option>면허구분 선택</option>
+                    </select>
+                    <button type="button" class="btn-outlined">진위여부조회</button>
+                  </div>
+                  <div class="help-text">
+                    * 도로교통공단에서 시행하는 검증시스템과 연동되어 제공됩니다.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">면허증 만기일</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" value="면허증 만기일 입력 (예시: 2025-07-30)" class="text-input" readonly>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-header-container">
+          <h2>2. 고객 차량 정보</h2>
+        </div>
+        <div class="form-rela">
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">차량 번호</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" placeholder="차량 번호 입력 (예시: 123가1234)" class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">사고 차종</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" placeholder="사고 차종 입력 (예시: 아우디A6)" class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">배기량 (선택)</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" placeholder="배기량 입력 (cc)" class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">연식 (선택)</span>
+                </div>
+                <div class="input-container">
+                  <select class="select full">
+                    <option>연식 선택</option>
+                  </select>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">대물, 자차 여부</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <select class="select full">
+                    <option>대물</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">보험사</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <select class="select full">
+                    <option>선택안함</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">접수번호</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" class="text-input" placeholder="접수번호 입력">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">입고 공업사</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" class="text-input" placeholder="입고 공업사">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">공업사 연락처</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" class="text-input" placeholder="공업사 연락처 입력">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-header-container">
+          <h2>3. 렌트 정보</h2>
+          <button type="button">차량 선택</button>
+        </div>
+        <div class="form-rela">
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">배차 일시</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" value="2025-07-30 00:00" class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">렌트 차종</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" value="차종 입력 (예시: 아우디A6)" readonly class="text-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">렌트 차량번호</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" value="차량번호 입력 (예시: 123가1234)" readonly class="text-input">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">유종</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <select class="select full" disabled>
+                    <option>유종 선택</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">유류량(%)</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" placeholder="유류량 입력 (%)" class="text-input">
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">배차시 km (선택)</span>
+                </div>
+                <div class="input-container">
+                  <input type="text" class="text-input" placeholder="배차시 km 입력">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-header-container">
+          <h2>4. 보험 정보</h2>
+        </div>
+        <div class="form-rela">
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">보험가입 연령</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="radio-group-wrap">
+                  <div class="radio-item">
+                    <label>
+                      <input type="radio" name="radio1" checked="">
+                      <span>만 26세 이상</span>
+                    </label>
+                  </div>
+                  <div class="radio-item">
+                    <label>
+                      <input type="radio" name="radio1">
+                      <span>만 26세 이상</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">자차 보험</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="radio-group-wrap">
+                  <div class="radio-item">
+                    <label>
+                      <input type="radio" name="radio2" checked="">
+                      <span>가입</span>
+                    </label>
+                  </div>
+                  <div class="radio-item">
+                    <label>
+                      <input type="radio" name="radio2">
+                      <span>미가입</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">자차 면책금</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="radio-group-wrap">
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio3" checked="">
+                        <span>30만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio3">
+                        <span>50만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio3">
+                        <span>100만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio3" value="custom">
+                        <span>직접입력</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="직접입력" class="text-input">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">자차 한도</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="radio-group-wrap">
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio4" checked="">
+                        <span>금액</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio4">
+                        <span>비율 (차량가액 기준)</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="radio-group-wrap">
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio5" checked="">
+                        <span>1천</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio5">
+                        <span>2천</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio5">
+                        <span>3천</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio5" value="custom">
+                        <span>직접입력</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="직접입력" class="text-input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">대인한도</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="radio-group-wrap">
+                  <div class="radio-item">
+                    <label>
+                      <input type="checkbox" checked="">
+                      <span class="checkbox">무한</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">대물 한도</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="radio-group-wrap">
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio6" checked="">
+                        <span>3천</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio6">
+                        <span>5천</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio6">
+                        <span>1억</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio6" value="custom">
+                        <span>직접입력</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="직접입력" class="text-input">
+                  </div>
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">자손 한도</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="radio-group-wrap">
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio7" checked="">
+                        <span>1,500만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio7" value="custom">
+                        <span>직접입력</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="직접입력" class="text-input">
+                  </div>
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">대인 면책금 (인당)</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="radio-group-wrap">
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio8" checked="">
+                        <span>없음</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio8">
+                        <span>30만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio8">
+                        <span>50만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio8" value="custom">
+                        <span>직접입력</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="직접입력" class="text-input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">대물 면책금 (건당)</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="radio-group-wrap">
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio9" checked="">
+                        <span>없음</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio9">
+                        <span>30만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio9">
+                        <span>50만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio9" value="custom">
+                        <span>직접입력</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="직접입력" class="text-input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">자손 면책금</span>
+                  <span class="required">*</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="radio-group-wrap">
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio10" checked="">
+                        <span>없음</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio10">
+                        <span>30만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio10">
+                        <span>50만원</span>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <label>
+                        <input type="radio" name="radio10" value="custom">
+                        <span>직접입력</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="직접입력" class="text-input">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-header-container">
+          <h2>5. 기타 정보</h2>
+        </div>
+        <div class="form-rela">
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">소개처</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container select-custom">
+                    <select class="select full">
+                      <option>소개처 선택</option>
+                      <option value="custom">직접입력</option>
+                    </select>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="소개처 직접입력" class="text-input">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">영업직원</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container select-custom">
+                    <select class="select full">
+                      <option>영업직원 선택</option>
+                      <option value="custom">직접입력</option>
+                    </select>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" placeholder="영업직원 직접입력" class="text-input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">렌터카 외관 촬영<br />(0/20)</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <div class="file-container">
+                      <input type="file" id="file-input-01" class="file-input" />
+                      <label for="file-input-01">
+                        <img src="../../assets/image/etc/etc-file-add.png" />
+                      </label>
+                      <div class="file-scrolls">
+                        <ul>
+                          <li>
+                            <img src="../../assets/image/etc/etc-upload-img01.png" />
+                            <button type="button">
+                              <img src="../../assets/image/ico/ico-file-remove.svg" />
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="help-text">
+                    * 첨부한 렌터카 외관 사진은 계약서 작성 완료 후 추가로 사진 첨부 불가합니다.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">고객차량 외관 촬영<br /> (7/20)</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <div class="file-container">
+                      <input type="file" id="file-input-02" class="file-input" />
+                      <label for="file-input-02">
+                        <img src="../../assets/image/etc/etc-file-add.png" />
+                      </label>
+                      <div class="file-scrolls">
+                        <ul>
+                          <li>
+                            <img src="../../assets/image/etc/etc-upload-img01.png" />
+                            <button type="button">
+                              <img src="../../assets/image/ico/ico-file-remove.svg" />
+                            </button>
+                          </li>
+                          <li>
+                            <img src="../../assets/image/etc/etc-upload-img01.png" />
+                            <button type="button">
+                              <img src="../../assets/image/ico/ico-file-remove.svg" />
+                            </button>
+                          </li>
+                          <li>
+                            <img src="../../assets/image/etc/etc-upload-img01.png" />
+                            <button type="button">
+                              <img src="../../assets/image/ico/ico-file-remove.svg" />
+                            </button>
+                          </li>
+                          <li>
+                            <img src="../../assets/image/etc/etc-upload-img01.png" />
+                            <button type="button">
+                              <img src="../../assets/image/ico/ico-file-remove.svg" />
+                            </button>
+                          </li>
+                          <li>
+                            <img src="../../assets/image/etc/etc-upload-img01.png" />
+                            <button type="button">
+                              <img src="../../assets/image/ico/ico-file-remove.svg" />
+                            </button>
+                          </li>
+                          <li>
+                            <img src="../../assets/image/etc/etc-upload-img01.png" />
+                            <button type="button">
+                              <img src="../../assets/image/ico/ico-file-remove.svg" />
+                            </button>
+                          </li>
+                          <li>
+                            <img src="../../assets/image/etc/etc-upload-img01.png" />
+                            <button type="button">
+                              <img src="../../assets/image/ico/ico-file-remove.svg" />
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="help-text">
+                    * 첨부한 렌터카 외관 사진은 계약서 작성 완료 후 추가로 사진 첨부 불가합니다.
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-fields-container">
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">기타 계약사항</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <textarea class="form-textarea contract-type"
+                      placeholder="기타 계약사항 입력 (예시: 계약자 외 운행금지)"></textarea>
+                  </div>
+                  <div class="textarea-footer">
+                    <span>* 고객 계약서에 기재됩니다.</span>
+                    <span>(0/400)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">특이사항</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <textarea class="form-textarea contract-type"
+                      placeholder="특이 사항 입력 (예시: 고객 성격이 급함)"></textarea>
+                  </div>
+                  <div class="textarea-footer">
+                    <span>* 계약서 메모에 기재됩니다.</span>
+                    <span>(0/400)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">보험사 전달사항</span>
+                </div>
+                <div class="form-rows-container">
+                  <div class="input-container">
+                    <textarea class="form-textarea contract-type"
+                      placeholder="보험사 전달사항 입력 (예시: XX요금기준표 50% 청구율 적용한 청구금액입니다)"></textarea>
+                  </div>
+                  <div class="textarea-footer">
+                    <span>* 청구 시 보험사에 전달됩니다</span>
+                    <span>(0/400)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <div class="field-label">
+                  <span class="label-text">고객서명 이미지</span>
+                </div>
+                <div class="input-container">
+                  <div class="sign-container"></div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="button-group type02">
+          <button class="btn-outlined rims-type">고객 운전자격조회 (RIMS)</button>
+          <button class="btn btn-orange">미완료</button>
+        </div>
+        <div class="button-group type02">
+          <button class="btn btn-secondary">목록</button>
+          <button class="btn btn-primary">저장</button>
+          <button class="btn btn-yellow">서명하기</button>
+          <button class="btn btn-yellow">고객서명 요청</button>
+          <button class="btn btn-green">작성완료</button>
+          <button class="btn btn-orange">계약서 삭제</button>
+        </div>
+      </div>
+
+
+      <!-- 컨텐츠 영역 -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="company-info">
+            <div class="info-row">
+              <span><strong>회사명</strong> 주식회사올림포스네트웍스</span>
+              <span><strong>대표</strong> 원종훈</span>
+              <span><strong>주소</strong> 경기도 성남시 수정구 고등로3, 현대지식산업센터 514호</span>
+            </div>
+            <div class="info-row">
+              <span><strong>사업자 등록번호</strong> 656-87-02554</span>
+              <span><strong>통신판매업 신고번호</strong> 제2022-서울송파-1106호</span>
+            </div>
+            <div class="info-row last">
+              <span><strong>개인정보책임관리자</strong> 박정근</span>
+              <a href="javascript:void(0)">이용약관</a>
+              <a href="javascript:void(0)">개인정보보호방침</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>
