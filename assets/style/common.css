@@ -161,7 +161,26 @@ textarea::placeholder {
 button {
   cursor: pointer;
 }
+select{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #EFF1F5 url(../image/bg/bg-select.svg) no-repeat right center !important;
+  background-size: 24px 24px !important;
+  padding-left: 10px !important;
+  padding-right: 34px !important;
+  border-radius: 4px !important;
+  border: 1px solid #EFF1F5 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #383F51 !important;
+  height: 36px !important;
 
+}
+select:focus{
+  background: #EFF1F5  url(../image/bg/bg-select-up.svg) no-repeat right center !important;
+  outline: 1px solid #1C97DB;
+}
 input[type=checkbox] {
   outline: none;
   background: url(../image/bg/bg-chk-off.svg) no-repeat center center;

@@ -599,10 +599,10 @@ table.dataTable.compact tbody td {
 
 div.dt-container div.dt-layout-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
-  margin: 0.75em 0;
+  margin: 0;
 }
 div.dt-container div.dt-layout-row div.dt-layout-cell {
   display: flex;
@@ -3891,4 +3891,47 @@ html[data-bs-theme=dark] div.dtsr-creation button:hover {
   background-color: rgb(64, 69, 73);
 }
 
-
+.dt-length label{
+  display: none;
+}
+.dt-layout-row:last-child{
+  height: 56px;
+  border-top: 1px solid #E5E9ED;
+  margin: 64px 0 0 0 !important;
+  position: relative;
+  padding: 0 30px;
+  align-items: center !important;
+}
+.dt-layout-row:last-child .dt-layout-end{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.dt-layout-row:last-child .dt-layout-end .dt-paging{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.dt-layout-row:first-child{
+  width: auto !important;
+  display: inline-flex !important;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  margin: 0 !important;
+  height: 56px;
+  z-index: 10;
+}
+.dt-layout-row:first-child .dt-layout-start{
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: flex-end !important;
+}

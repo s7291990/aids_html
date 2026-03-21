@@ -339,6 +339,7 @@
   align-items: center;
   height: 56px;
   width: 100%;
+  background: #fff;
 }
 
 .page-header .page-header-container {
