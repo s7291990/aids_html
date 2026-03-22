@@ -3903,7 +3903,7 @@ html[data-bs-theme=dark] div.dtsr-creation button:hover {
 .dt-length label{
   display: none;
 }
-.dt-layout-row:last-child{
+.dt-layout-row:nth-child(3){
   height: 56px;
   border-top: 1px solid #E5E9ED;
   margin: 64px 0 0 0 !important;
@@ -3911,7 +3911,7 @@ html[data-bs-theme=dark] div.dtsr-creation button:hover {
   padding: 0 30px;
   align-items: center !important;
 }
-.dt-layout-row:last-child .dt-layout-end{
+.dt-layout-row .dt-layout-end{
   position: absolute;
   left: 0;
   top: 0;
@@ -3921,7 +3921,7 @@ html[data-bs-theme=dark] div.dtsr-creation button:hover {
   justify-content: center;
   width: 100%;
 }
-.dt-layout-row:last-child .dt-layout-end .dt-paging{
+.dt-layout-row .dt-layout-end .dt-paging{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3966,7 +3966,7 @@ div.dt-container .dt-paging .fg-button:first-child,
 div.dt-container .dt-paging .fg-button:last-child{
   display: none !important;
 }
-.dt-layout-row:last-child .dt-layout-end .dt-paging nav{
+.dt-layout-row .dt-layout-end .dt-paging nav{
   display: flex;
   align-items: center;
   justify-content: center;

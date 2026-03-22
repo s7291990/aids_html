@@ -64,7 +64,7 @@ $(function () {
   });
 
   // 셀렉트 박스 선택후 포커스 해제
-  $("body").on("change", "select", function () {
+  $("body").on("change mouseleave", "select", function () {
     var el = this;
     setTimeout(function () {
       if (el) {
@@ -161,3 +161,44 @@ common = {
     $(o).removeClass("active");
   },
 };
+
+function estimateScrollYBeforeInit() {
+  if (!tableWrap) {
+    return "calc(100vh - 280px)";
+  }
+  var thead = document.querySelector("#tableGrid thead");
+  var theadH = thead ? thead.offsetHeight : 0;
+  var overhead = 130;
+  var px = Math.max(
+    120,
+    tableWrap.clientHeight - theadH - overhead,
+  );
+  return px + "px";
+}
+
+function fitScrollBodyHeight(api) {
+  var wrap = document.querySelector(".table-container");
+  if (!wrap) return;
+  var dt = wrap.querySelector(".dt-container");
+  var body = wrap.querySelector(".dt-scroll-body");
+  if (!dt || !body) return;
+  var head = wrap.querySelector(".dt-scroll-head");
+  var headH = head ? head.offsetHeight : 0;
+  var rows = dt.querySelectorAll(":scope > .dt-layout-row");
+  var used = 0;
+  for (var i = 0; i < rows.length; i++) {
+    var row = rows[i];
+    if (row.classList.contains("dt-layout-table")) {
+      used += headH;
+    } else {
+      used += row.offsetHeight;
+    }
+  }
+  var gap = 8;
+  var h = Math.max(80, wrap.clientHeight - used - gap);
+  body.style.height = h + "px";
+  body.style.maxHeight = h + "px";
+  if (api && api.columns) {
+    api.columns.adjust();
+  }
+}
