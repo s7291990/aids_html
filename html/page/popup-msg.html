@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
   <meta charset="utf-8" />
@@ -8,8 +8,11 @@
   <meta name="format-detection" content="telephone=no" />
   <title></title>
   <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/script/lib/datatables.js"></script>
   <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
   <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/lib/jquery-ui-timepicker-addon.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/lib/bootstrap.min.js"></script>
   <script type="text/javascript" src="../../assets/script/common.js"></script>
 
 </head>
@@ -32,24 +35,24 @@
         <div class="form-container">
           <div class="form-item-group">
             <label>화기 코드</label>
-            <input type="text" class="input" />
+            <input type="text" class="form-control" />
           </div>
           <div class="form-item-group">
             <label>화기 이름</label>
-            <input type="text" class="input" />
+            <input type="text" class="form-control" />
           </div>
         </div>
 
         <div class="form-container">
           <div class="form-item-group">
             <label>직사화기 여부</label>
-            <select class="select">
+            <select class="form-select">
               <option>True</option>
             </select>
           </div>
           <div class="form-item-group">
             <label>탄 종류</label>
-            <select class="select">
+            <select class="form-select">
               <option>True</option>
             </select>
           </div>
@@ -58,11 +61,11 @@
         <div class="form-container">
           <div class="form-item-group">
             <label>탄 보유량</label>
-            <input type="text" class="input" />
+            <input type="text" class="form-control" />
           </div>
           <div class="form-item-group">
             <label>유효 사거리</label>
-            <input type="text" class="input" />
+            <input type="text" class="form-control" />
           </div>
         </div>
 

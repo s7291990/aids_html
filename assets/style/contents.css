@@ -78,7 +78,7 @@
 }
 .search-input-group{
   width: 200px;
-  height: 32px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -101,6 +101,7 @@
   border: 0;
   background: transparent;
   padding: 0;
+  display: flex;
 }
 
 .form-container{
@@ -126,7 +127,7 @@
   color: #383F51;
   font-weight: 500;
 }
-.form-item-group .input,
-.form-item-group .select{
+.form-item-group .form-control,
+.form-item-group .form-select{
  width: 100%;
 }

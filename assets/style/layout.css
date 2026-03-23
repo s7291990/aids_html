@@ -6,6 +6,9 @@
   width: 100%;
   overflow: hidden;
   background: #EEF0F3;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Sidebar */
@@ -455,6 +458,8 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .modal-header .close-btn {
@@ -482,6 +487,7 @@
   height: auto;
   overflow: hidden;
   padding: 30px;
+  border-top: 0;
 }
 
 .modal-content .msg {
