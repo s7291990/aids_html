@@ -178,7 +178,8 @@ select{
 }
 select:focus{
   background: #EFF1F5  url(../image/bg/bg-select-up.svg) no-repeat right center !important;
-  outline: 1px solid #1C97DB;
+  /*outline: 1px solid #1C97DB;*/
+  outline: none;
 }
 input[type=checkbox] {
   outline: none;
@@ -408,6 +409,16 @@ input[type=radio]:checked::-ms-check {
   background-image: url(../image/bg/bg-calendar.svg) !important;
   background-position: right center !important;
 }
+.input.error{
+  background: #fff url(../image/ico/ico-input-error.svg) no-repeat right center !important;
+  border: 1px solid #E84A4A !important;
+}
 .select{
   min-width: 120px;
+}
+.icon-btn img{
+
+}
+.icon-btn:hover img{
+  filter: brightness(0) saturate(100%) invert(60%) sepia(84%) saturate(4366%) hue-rotate(173deg) brightness(97%) contrast(79%);
 }
