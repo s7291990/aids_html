@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
+    <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+    <script type="text/javascript" src="../../assets/script/lib/datatables.js"></script>
+    <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/script/lib/jquery-ui-timepicker-addon.min.js"></script>
+    <script type="text/javascript" src="../../assets/script/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/script/common.js"></script>
+  </head>
+
+  <body>
+    <!-- Top Bar -->
+    <header class="header">
+      <h1 class="logo">
+        <img src="../../assets/image/etc/etc-logo.svg" alt="올림포스 로고" />
+      </h1>
+      <div class="page-name">자산 정보</div>
+      <button class="btn primary">로그아웃</button>
+    </header>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="javascript:void(0)" class="nav-item">
+                <span class="icon"
+                  ><img src="../../assets/image/ico/ico-lnb-list01.svg" alt=""
+                /></span>
+                <span class="text">멀티모달 데이터 관리</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">영상정보</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">전문정보</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">음성정보</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="nav-item">
+                <span class="icon"
+                  ><img src="../../assets/image/ico/ico-lnb-list01.svg" alt=""
+                /></span>
+                <span class="text">상황인지 추론 결과 관리</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">상황인지 결과</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="nav-item">
+                <span class="icon"
+                  ><img src="../../assets/image/ico/ico-lnb-list01.svg" alt=""
+                /></span>
+                <span class="text">위협대상 정보 관리</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">아군 자산제원 정보</span></a
+                  >
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="javascript:void(0)" class="nav-item"
+                        ><span class="text">자산정보</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="nav-item"
+                        ><span class="text">부대정보</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="nav-item"
+                        ><span class="text">아/적 화기효과</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">적군 자산제원 정보</span></a
+                  >
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="javascript:void(0)" class="nav-item"
+                        ><span class="text">자산정보</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="nav-item"
+                        ><span class="text">적/아 화기효과</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">전장상황 정보</span></a
+                  >
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="javascript:void(0)" class="nav-item"
+                        ><span class="text">아군 객체정보</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="nav-item"
+                        ><span class="text">적군 객체정보</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="nav-item"
+                        ><span class="text">지형정보</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="nav-item">
+                <span class="icon"
+                  ><img src="../../assets/image/ico/ico-lnb-list01.svg" alt=""
+                /></span>
+                <span class="text">위협평가/타격 스케줄링 결과 관리</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">위협평가 관리</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">타격 스케줄링 결과</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="nav-item">
+                <span class="icon"
+                  ><img src="../../assets/image/ico/ico-lnb-list01.svg" alt=""
+                /></span>
+                <span class="text">전장자료 통계</span>
+              </a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">현황요약</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">멀티모달 통계</span></a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav-item"
+                    ><span class="text">표적 정보 통계</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="nav-item">
+                <span class="icon"
+                  ><img src="../../assets/image/ico/ico-lnb-list01.svg" alt=""
+                /></span>
+                <span class="text">보고서</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- 컨텐츠 영역 -->
+        <div class="page-header">
+          <div class="search-section">
+            <div class="search-filters">
+
+              <input
+                type="text"
+                placeholder="시작일시"
+                class="form-control datetimepicker"
+              />
+              <input
+                type="text"
+                placeholder="종료일시"
+                class="form-control datetimepicker"
+              />
+              <input
+                type="text"
+                placeholder="시나리오 ID"
+                class="form-control normal"
+              />
+              <input
+                type="text"
+                placeholder="시퀀스 ID"
+                class="form-control normal"
+              />
+            </div>
+          </div>
+          <div class="page-header-container">
+            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-search.svg" alt="" /></button>
+            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-copy.svg" alt="" /></button>
+            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-add.svg" alt="" /></button>
+            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-register.svg" alt="" /></button>
+            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-delete.svg" alt="" /></button>
+          </div>
+        </div>
+
+        <div class="page-list-container">
+          <!-- Table -->
+          <div class="table-container">
+            <table id="tableGrid" class="display">
+              <thead class="custom-head">
+                <tr>
+                  <th>시나리오 ID</th>
+                  <th>이미지ID</th>
+                  <th>촬영 시각</th>
+                  <th>이미지 파일 경로/URL</th>
+                  <th>이미지 종류</th>
+                  <th>시스템타임</th>
+                </tr>
+              </thead>
+            </table>
+            <script>
+              var data = [
+                [
+                  "ABED2345",
+                  "-",
+                  "-",
+                  "-",
+                  "-",
+                  "-",
+                ],
+              ];
+              var tableWrap = document.querySelector(".table-container");
+
+              var scrollY = estimateScrollYBeforeInit();
+              var table = new DataTable("#tableGrid", {
+                //ajax: '../ajax/data/arrays.txt'
+                data: data,
+                searching: false,
+                pageLength: 20,
+                lengthMenu: [10, 20, 50, 100],
+                width: "100%", // 폭 100%로
+                responsive: true, // 화면 변화에 맞춰 재배치
+                //autoWidth: false,
+                scrollY: scrollY,
+                scrollCollapse: true,
+                language: {
+                  info: "검색 결과 <strong>_TOTAL_</strong>건 / _PAGE_페이지 선택",
+                  infoEmpty:
+                    "검색 결과 <strong>_TOTAL_</strong>건 / _PAGE_페이지 선택",
+                  infoFiltered: " (전체 _MAX_건 중)",
+                },
+                // fixedColumns: {
+                //   start: 3, // 왼쪽 3열 까지 고정
+                //   end: 0, // 오른쪽 고정 없음
+                // },
+                columnDefs: [
+                  //{ targets: 0, width: "90px" },
+                  //{ targets: 1, width: "150px" },
+                  //{ targets: 2, width: "60px" },
+                  // {
+                  //   targets: 2,
+                  //   createdCell: function (td, cellData) {
+                  //     if (cellData === "특정값") {
+                  //       td.classList.add("cell-highlight");
+                  //     }
+                  //   },
+                  // },
+                ],
+                fnInitComplete: function (settings) {
+                  var api = new DataTable.Api(settings);
+                  fitScrollBodyHeight(api);
+                  requestAnimationFrame(function () {
+                    fitScrollBodyHeight(api);
+                  });
+                },
+              });
+              table.columns.adjust();
+              window.addEventListener("resize", function () {
+                fitScrollBodyHeight(table);
+              });
+            </script>
+          </div>
+
+          <!-- 상세 정보-->
+          <div class="list-info-container">
+            <h3 class="info-title">상세 정보</h3>
+            <ul class="info-list">
+              <li>
+                <div class="key">해상도 정보</div>
+                <div class="value">-</div>
+              </li>
+              <li>
+                <div class="key">위도</div>
+                <div class="value">37.532532</div>
+              </li>
+              <li>
+                <div class="key">경도</div>
+                <div class="value">127.352352</div>
+              </li>
+              <li>
+                <div class="key">고도</div>
+                <div class="value">127.352352</div>
+              </li>
+              <li>
+                <div class="key">기타 메타데이터</div>
+                <div class="value">-</div>
+              </li>
+              <li>
+                <div class="key">시스템타임</div>
+                <div class="value">16:30:34</div>
+              </li>
+              <li>
+                <div class="key">탄수</div>
+                <div class="value">12000</div>
+              </li>
+              <li>
+                <div class="key">탄종</div>
+                <div class="value">120mm APFSDS</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 컨텐츠 영역 -->
+      </main>
+    </div>
+  </body>
+</html>

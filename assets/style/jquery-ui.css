@@ -2345,13 +2345,13 @@ a.ui-button:active,
 }
 
 .ui-datepicker select.ui-datepicker-month {
-	width: 55px;
+	width: 75px;
 	height: 22px;
 	min-width: 0;
 }
 
 .ui-datepicker select.ui-datepicker-year {
-	width: 70px;
+	width: 90px;
 	min-width: 0;
 	height: 22px;
 }

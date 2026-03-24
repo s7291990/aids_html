@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
+  <script type="text/javascript" src="../../assets/script/lib/datatables.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/lib/jquery-ui-timepicker-addon.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+  </div>
+
+  <!--팝업 -->
+  <div id="modal-register" class="modal-popup active">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2>파일 추가</h2>
+        <button type="button" class="close-btn" onclick="common.popClose('#modal-register')"><img src="../../assets/image/ico/ico-popup-close.svg" alt="" /></button>
+      </div>
+      <div class="modal-content">
+
+        <div class="form-container">
+          <div class="form-item-group">
+            <label>시나리오 ID</label>
+            <input type="text" class="form-control error" />
+          </div>
+          <div class="form-item-group">
+            <label>해상도정보</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+
+        <div class="form-container">
+          <div class="form-item-group">
+            <label>이미지ID</label>
+            <select class="form-select">
+              <option>True</option>
+            </select>
+          </div>
+          <div class="form-item-group">
+            <label>위도</label>
+            <select class="form-select">
+              <option>True</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <div class="form-item-group">
+            <label>촬영 시각</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="form-item-group">
+            <label>경도</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="form-item-group">
+            <label>이미지 종류</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="form-item-group">
+            <label>고도</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="form-item-group">
+            <label>시스템타임</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+
+        <div class="modal-btn-container">
+          <button type="button" class="btn secondary">취소</button>
+          <button type="button" class="btn primary">추가</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
