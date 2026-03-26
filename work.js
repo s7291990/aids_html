@@ -28,6 +28,11 @@ var work = [
   { "cate":"m03", "dep01":"자산정보", "dep02":"목록", "url":"./html/sim/sim-enemy-asset-list.html", "date":"2026-08-25" },
   { "cate":"m03", "dep01":"자산정보", "dep02":"상세정보", "url":"./html/sim/sim-enemy-asset-detail.html", "date":"2026-08-25" },
 
+	{ "cate":"m03", "dep01":"아군 객체정보", "dep02":"목록", "url":"./html/sim/sim-friendly-weapon-list.html", "date":"2026-08-25" },
+	{ "cate":"m03", "dep01":"적군 객체정보", "dep02":"목록", "url":"./html/sim/sim-enemy-weapon-list.html", "date":"2026-08-25" },
+
+	{ "cate":"m03", "dep01":"위협평가 관리", "dep02":"목록", "url":"./html/sim/sim-assessment-list.html", "date":"2026-08-25" },
+
 
 
 ];

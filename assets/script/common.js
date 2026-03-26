@@ -169,10 +169,7 @@ function estimateScrollYBeforeInit() {
   var thead = document.querySelector("#tableGrid thead");
   var theadH = thead ? thead.offsetHeight : 0;
   var overhead = 130;
-  var px = Math.max(
-    120,
-    tableWrap.clientHeight - theadH - overhead,
-  );
+  var px = Math.max(120, tableWrap.clientHeight - theadH - overhead);
   return px + "px";
 }
 
@@ -201,4 +198,88 @@ function fitScrollBodyHeight(api) {
   if (api && api.columns) {
     api.columns.adjust();
   }
+}
+
+function _dtApiFrom(any) {
+  if (!any) return null;
+  if (any.table && typeof any.table === "function") return any; // API instance
+  if (any.settings && typeof any.settings === "function") {
+    var s = any.settings();
+    return s && s[0] ? new DataTable.Api(s[0]) : null;
+  }
+  return null;
+}
+
+function _dtWrapFrom(apiOrTable) {
+  var api = _dtApiFrom(apiOrTable);
+  if (!api) return null;
+  var node = api.table && api.table().node ? api.table().node() : null;
+  return node && node.closest ? node.closest(".table-container") : null;
+}
+
+// 래퍼 높이에서 "테이블 위 영역(위협도 등)" + "DT 컨트롤/헤더"를 제외한 나머지를 tbody 스크롤 높이로 맞춤
+function fitScrollBodyHeight(apiOrTable) {
+  var api = _dtApiFrom(apiOrTable) || apiOrTable;
+  var wrap = _dtWrapFrom(apiOrTable);
+  if (!wrap) return;
+
+  var dt = wrap.querySelector(".dt-container");
+  var body = wrap.querySelector(".dt-scroll-body");
+  if (!dt || !body) return;
+
+  // dt-container 위쪽(테이블 외 UI) 높이 합
+  var reservedTop = 0;
+  for (var el = dt.previousElementSibling; el; el = el.previousElementSibling) {
+    reservedTop += el.offsetHeight;
+  }
+
+  // DT 컨트롤(상단/하단) + 스크롤 헤더 높이 합
+  var head = wrap.querySelector(".dt-scroll-head");
+  var headH = head ? head.offsetHeight : 0;
+
+  var rows = dt.querySelectorAll(":scope > .dt-layout-row");
+  var used = 0;
+  for (var i = 0; i < rows.length; i++) {
+    var row = rows[i];
+    if (row.classList.contains("dt-layout-table")) {
+      used += headH;
+    } else {
+      used += row.offsetHeight;
+    }
+  }
+
+  var gap = 8;
+  var h = Math.max(80, wrap.clientHeight - reservedTop - used - gap);
+  body.style.height = h + "px";
+  body.style.maxHeight = h + "px";
+
+  if (api && api.columns) {
+    api.columns.adjust();
+  }
+}
+
+function estimateScrollYBeforeInit(tableSelector) {
+  var tableEl = document.querySelector(tableSelector);
+  var wrap =
+    tableEl && tableEl.closest ? tableEl.closest(".table-container") : null;
+  if (!wrap) return "200px";
+
+  var thead = tableEl.querySelector("thead");
+  var theadH = thead ? thead.offsetHeight : 0;
+
+  // 초기화 전에는 dt 컨트롤 높이를 모르므로 대략값 사용
+  var overhead = 130;
+
+  // 테이블 위쪽(위협도/타이틀 등) 높이 합
+  var reservedTop = 0;
+  for (
+    var el = tableEl.previousElementSibling;
+    el;
+    el = el.previousElementSibling
+  ) {
+    reservedTop += el.offsetHeight;
+  }
+
+  var px = Math.max(120, wrap.clientHeight - reservedTop - theadH - overhead);
+  return px + "px";
 }
