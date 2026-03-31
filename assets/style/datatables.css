@@ -4707,3 +4707,7 @@ div.dt-container .dt-paging .fg-button.next {
 .dt-info strong {
   color: #348bf2;
 }
+#tableGrid tbody tr.row-top3 > * {
+  background-color: #fdeded !important;
+  font-weight: 600;
+}
