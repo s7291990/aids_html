@@ -149,6 +149,12 @@
   color: #383F51;
   font-weight: 500;
 }
+.form-item-group label span{
+  color: #E84A4A;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 3px;
+}
 .form-item-group .form-control,
 .form-item-group .form-select{
  width: 100%;
