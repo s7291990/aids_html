@@ -33,7 +33,21 @@
       type="text/javascript"
       src="../../assets/script/lib/bootstrap.min.js"
     ></script>
+
     <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+    <!-- 영역 분할 조절 스크립트 -->
+    <script
+      type="text/javascript"
+      src="../../assets/script/lib/split.min.js"
+    ></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        Split([".table-container", ".list-info-container"], {
+          sizes: [75, 25],
+        });
+      });
+    </script>
   </head>
 
   <body>

@@ -8,13 +8,45 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <title></title>
-    <link rel="stylesheet" href="../../assets/style/common.css" type="text/css" />
-    <script type="text/javascript" src="../../assets/script/lib/datatables.js"></script>
-    <script type="text/javascript" src="../../assets/script/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="../../assets/script/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../../assets/script/lib/jquery-ui-timepicker-addon.min.js"></script>
-    <script type="text/javascript" src="../../assets/script/lib/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../../assets/style/common.css"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="../../assets/script/lib/datatables.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../assets/script/jquery-3.6.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../assets/script/jquery-ui.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../assets/script/lib/jquery-ui-timepicker-addon.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../assets/script/lib/bootstrap.min.js"
+    ></script>
     <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+    <!-- 영역 분할 조절 스크립트 -->
+    <script
+      type="text/javascript"
+      src="../../assets/script/lib/split.min.js"
+    ></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        Split([".table-container", ".list-info-container"], {
+          sizes: [75, 25],
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -206,7 +238,6 @@
         <div class="page-header">
           <div class="search-section">
             <div class="search-filters">
-
               <input
                 type="text"
                 placeholder="시작일"
@@ -226,16 +257,28 @@
                   placeholder="검색어를 입력하세요"
                   class="form-control search-input"
                 />
-                <button class="search-btn"><img src="../../assets/image/ico/ico-search.svg" alt="검색" /></button>
+                <button class="search-btn">
+                  <img src="../../assets/image/ico/ico-search.svg" alt="검색" />
+                </button>
               </div>
             </div>
           </div>
           <div class="page-header-container">
-            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-search.svg" alt="" /></button>
-            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-copy.svg" alt="" /></button>
-            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-add.svg" alt="" /></button>
-            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-register.svg" alt="" /></button>
-            <button type="button" class="icon-btn"><img src="../../assets/image/ico/ico-side-delete.svg" alt="" /></button>
+            <button type="button" class="icon-btn">
+              <img src="../../assets/image/ico/ico-side-search.svg" alt="" />
+            </button>
+            <button type="button" class="icon-btn">
+              <img src="../../assets/image/ico/ico-side-copy.svg" alt="" />
+            </button>
+            <button type="button" class="icon-btn">
+              <img src="../../assets/image/ico/ico-side-add.svg" alt="" />
+            </button>
+            <button type="button" class="icon-btn">
+              <img src="../../assets/image/ico/ico-side-register.svg" alt="" />
+            </button>
+            <button type="button" class="icon-btn">
+              <img src="../../assets/image/ico/ico-side-delete.svg" alt="" />
+            </button>
           </div>
         </div>
 
@@ -254,15 +297,7 @@
               </thead>
             </table>
             <script>
-              var data = [
-                [
-                  "ABED2345",
-                  "-",
-                  "-",
-                  "-",
-                  "-",
-                ],
-              ];
+              var data = [["ABED2345", "-", "-", "-", "-"]];
               var tableWrap = document.querySelector(".table-container");
 
               var scrollY = estimateScrollYBeforeInit();
